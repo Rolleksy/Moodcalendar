@@ -1,0 +1,71 @@
+.moodinput-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: hsla(0, 0%, 100%, 0.7);
+    backdrop-filter: blur(8rem);
+}
+
+.moodinput-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.moodinput-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 3rem;
+    gap: 1rem;
+}
+
+.moodinput-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.moodinput-button:hover {
+    transform: scale(2);
+    box-shadow: 1px 5px 10px 1px rgba(77, 77, 77, 0.507);
+    letter-spacing: 0.05rem;
+}
+
+.moodinput-button:active {
+    transform: scale(1.5);
+    box-shadow: 1px 5px 10px 1px rgba(77, 77, 77, 0.507);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width: 768px) {
+    .moodinput-container {
+        margin: 5rem 2rem;
+    }
+    .moodinput-container h1 {
+        font-size: 1.3rem;
+    }
+    .moodinput-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
